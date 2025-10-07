@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+
+    <ImageButton
+        android:id="@+id/btnVolver"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back"
+        android:background="@android:color/transparent"
+        android:contentDescription="Volver"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="395dp"
+        android:layout_height="478dp"
+        android:layout_below="@id/btnVolver"
+        android:layout_marginTop="8dp"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView"
+        android:layout_marginTop="30dp"
+        android:text="Título de la rutina"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnIniciarRutina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo"
+        android:layout_marginTop="27dp"
+        android:text="Iniciar Rutina" />
+</RelativeLayout>

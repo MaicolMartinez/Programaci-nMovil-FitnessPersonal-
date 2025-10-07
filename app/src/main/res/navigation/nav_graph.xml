@@ -1,0 +1,42 @@
+<!-- res/navigation/nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/perfilFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fitnesspersonal.HomeFragment"
+        android:label="Inicio" >
+        <action
+            android:id="@+id/action_home_to_rutinas"
+            app:destination="@id/rutinasFragment" />
+        <action
+            android:id="@+id/action_home_to_perfil"
+            app:destination="@id/perfilFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/informativoFragment"
+        android:name="com.example.fitnesspersonal.InformativoFragment"
+        android:label="Informativo" />
+
+    <fragment
+        android:id="@+id/rutinasFragment"
+        android:name="com.example.fitnesspersonal.RutinasFragment"
+        android:label="Rutinas">
+        <action
+            android:id="@+id/action_rutinasFragment_to_ejercicioFragment"
+            app:destination="@id/ejercicioFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ejercicioFragment"
+        android:name="com.example.fitnesspersonal.EjercicioFragment"
+        android:label="Ejercicio" />
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.fitnesspersonal.PerfilFragment"
+        android:label="Perfil" />
+</navigation>

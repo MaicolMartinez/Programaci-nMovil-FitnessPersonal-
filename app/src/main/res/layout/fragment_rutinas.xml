@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp">
+
+            <ImageButton
+                android:id="@+id/btnBackRutinas"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Atrás"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rutinas de entrenamientos"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+
+        <GridLayout
+            android:id="@+id/gridRutinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"
+            android:layout_marginTop="16dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnImgRutina1"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Rutina 1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rutina1"
+                    android:tooltipText="Entrenamiento con pelota y mancuernas para todo el cuerpo" />
+
+                <TextView
+                    android:id="@+id/txtRutina1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ejercicio en casa con pelota y mancuerna"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnIniciarRutina1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnImgRutina2"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Rutina 2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rutina2"
+                    android:tooltipText="Rutina de yoga en pareja para mejorar flexibilidad y concentración" />
+
+                <TextView
+                    android:id="@+id/txtRutina2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ejercicio de yoga en pareja"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnIniciarRutina2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnImgRutina3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Rutina 3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rutina3"
+                    android:tooltipText="Ejercicios con mancuernas para fortalecer brazos y espalda" />
+
+                <TextView
+                    android:id="@+id/txtRutina3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ejercicio en casa con mancuernas"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnIniciarRutina3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnImgRutina4"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Rutina 4"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rutina4"
+                    android:tooltipText="Rutina de estiramiento ideal para después del entrenamiento" />
+
+                <TextView
+                    android:id="@+id/txtRutina4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ejercicio de estiramiento"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnIniciarRutina4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnImgRutina5"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Rutina 5"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rutina5"
+                    android:tooltipText="Rutina con bandas elásticas para tonificar y ganar fuerza" />
+
+                <TextView
+                    android:id="@+id/txtRutina5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ejercicio en casa con bandas"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnIniciarRutina5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnImgRutina6"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Rutina 6"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rutina6"
+                    android:tooltipText="Ejercicio con cuerda para mejorar resistencia y coordinación" />
+
+                <TextView
+                    android:id="@+id/txtRutina6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ejercicio en casa con cuerda"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btnIniciarRutina6"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

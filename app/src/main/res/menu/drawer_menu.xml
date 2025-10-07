@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_menu"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/perfilFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Perfil" />
+
+    <item
+        android:id="@+id/rutinasFragment"
+        android:icon="@drawable/ic_rutina"
+        android:title="Rutinas" />
+
+
+    <item
+        android:id="@+id/informativoFragment"
+        android:icon="@drawable/ic_guia"
+        android:title="Informacion" />
+
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@drawable/ic_x2"
+        android:title="Salir" />
+</menu>
